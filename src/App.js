@@ -4,6 +4,8 @@ import {Header,Categories} from "./components";
 
 function App () {
 
+
+
     return (
         <div className="App">
             <div className="wrapper">
@@ -12,7 +14,9 @@ function App () {
                 <div className="content">
                     <div className="container">
                         <div className="content__top">
-                            <Categories items={[
+                            <Categories
+                                onClickItem={(name)=> console.log(name)}
+                                items={[
                                 'Все',
                                 'Мясные',
                                 'Вегетарианская',
